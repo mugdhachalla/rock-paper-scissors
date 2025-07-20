@@ -5,7 +5,7 @@ let ui;
 let result;
 rockBtn.addEventListener("click", () => {
     ui=1;
-    const comp_input=Math.floor(Math.random()*3);
+    const comp_input=Math.floor(Math.random()*3)+1;
     comp(comp_input);
     document.getElementById("user_choice").textContent="You Chose: Rock";
     game(ui,comp_input);
@@ -14,7 +14,7 @@ rockBtn.addEventListener("click", () => {
 });
 paperBtn.addEventListener("click", () =>{
     ui=2;
-    const comp_input=Math.floor(Math.random()*3);
+    const comp_input=Math.floor(Math.random()*3)+1;
     comp(comp_input);
     document.getElementById("user_choice").textContent="You Chose: Paper";
     game(ui,comp_input);
@@ -22,7 +22,7 @@ paperBtn.addEventListener("click", () =>{
 });
 scissorsBtn.addEventListener("click", () =>{
     ui=3;
-    const comp_input=Math.floor(Math.random()*3);
+    const comp_input=Math.floor(Math.random()*3)+1;
     comp(comp_input);
     document.getElementById("user_choice").textContent="You Chose: Scissors";
     game(ui,comp_input);
