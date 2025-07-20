@@ -9,6 +9,7 @@ rockBtn.addEventListener("click", () => {
     comp(comp_input);
     document.getElementById("user_choice").textContent="You Chose: Rock";
     game(ui,comp_input);
+    document.getElementById("result").style.display = "block";
     document.getElementById("winner").textContent=result;
 
 });
@@ -18,6 +19,7 @@ paperBtn.addEventListener("click", () =>{
     comp(comp_input);
     document.getElementById("user_choice").textContent="You Chose: Paper";
     game(ui,comp_input);
+    document.getElementById("result").style.display = "block";
     document.getElementById("winner").textContent=result;
 });
 scissorsBtn.addEventListener("click", () =>{
@@ -26,6 +28,7 @@ scissorsBtn.addEventListener("click", () =>{
     comp(comp_input);
     document.getElementById("user_choice").textContent="You Chose: Scissors";
     game(ui,comp_input);
+    document.getElementById("result").style.display = "block";
     document.getElementById("winner").textContent=result;
 });
 function game(ui,comp_input){

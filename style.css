@@ -8,6 +8,14 @@ body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #9fdaec;
 }
+#buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 #buttons button{
     padding: 15px 30px;
     font-size: 18px;
@@ -33,6 +41,7 @@ body {
     transition: background-color 0.3s;
 }
 #result{ 
+    display: none;
     padding: 20px 30px;
     background-color: beige;
     border-radius: 10px;
@@ -43,3 +52,36 @@ body {
     transition: background-color 0.3s ease;
     cursor:pointer;
 }
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+    justify-content: flex-start; /* so content starts from top */
+  }
+
+  #buttons {
+    flex-direction: column;   /* stack buttons vertically */
+    gap: 15px;
+    align-items: center;
+  }
+
+  #buttons button {
+    width: 100%;
+    max-width: 250px;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  #header {
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  #result {
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+
