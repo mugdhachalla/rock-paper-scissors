@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #9fdaec;
+}
+#buttons button{
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: beige;
+    color: black;
+    transition: background-color 0.3s;
+}
+#buttons button:hover{
+    background-color: pink;
+}
+#header{
+    align-items: first baseline;
+    padding: 15px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: beige;
+    color: black;
+    transition: background-color 0.3s;
+}
+#result{ 
+    padding: 20px 30px;
+    background-color: beige;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    max-width: 400px;
+    margin: 30px auto;
+    transition: background-color 0.3s ease;
+    cursor:pointer;
+}
