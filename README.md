@@ -13,10 +13,6 @@ A simple Rock Paper Scissors game built using **HTML**, **CSS**, and **JavaScrip
 - `index.html`
 - `style.css`
 - `script.js`
-
-### 🚀 How to Run
-Open `index.html` in your browser and start playing!
-
 ---
 
 Made by **Mugdha Challa**
