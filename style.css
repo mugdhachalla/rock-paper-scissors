@@ -30,10 +30,8 @@ body {
     background-color: pink;
 }
 #header{
-    align-items: first baseline;
     padding: 15px 30px;
     font-size: 25px;
-    cursor: pointer;
     border: none;
     border-radius: 8px;
     background-color: beige;
@@ -41,25 +39,59 @@ body {
     transition: background-color 0.3s;
 }
 #result{ 
-    display: none;
-    padding: 20px 30px;
-    background-color: beige;
-    border-radius: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    max-width: 400px;
-    margin: 30px auto;
-    transition: background-color 0.3s ease;
-    cursor:pointer;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;     
+  border: none;
+  border-radius: 8px;
+  padding: 20px 30px;
+  background-color: beige;
+  font-family: 'Times New Roman', Times, serif;
+  transition: background-color 0.3s ease;
+}
+
+#score{
+  display: flex;
+  flex-direction: column;   
+  align-items: center;     
+  border: none;
+  border-radius: 8px;
+  padding: 20px 30px;
+  background-color: beige;
+  font-family: 'Times New Roman', Times, serif;
+  transition: background-color 0.3s ease;
+}
+
+#result-score {
+  display: none;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#reset {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#reset:hover {
+  background-color: darkred;
 }
 @media (max-width: 600px) {
   body {
     padding: 20px;
-    justify-content: flex-start; /* so content starts from top */
+    justify-content: flex-start; 
   }
 
   #buttons {
-    flex-direction: column;   /* stack buttons vertically */
+    flex-direction: column;  
     gap: 15px;
     align-items: center;
   }
@@ -82,6 +114,16 @@ body {
     padding: 15px;
     margin-top: 20px;
     width: 90%;
+  }
+  #score {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+  #result-score {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

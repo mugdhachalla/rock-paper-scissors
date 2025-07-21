@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <title> ROCK PAPER SCISSORS </title>
     <div id="header">
         <h1>LET'S PLAY!</h1>
     </div>
@@ -20,11 +19,23 @@
     </div>
     <br>
     <br>
-   <div id="result">
-    <p id="user_choice">You Chose: </p>
-    <p id="comp_choice">The Computer Chose: </p>
-    <p id="winner">Result: </p>
-  </div> 
+    <div id="result-score">
+      <div id="result">
+        <h3>RESULT:</h3>
+        <p id="user_choice">You Chose: </p>
+        <p id="comp_choice">The Computer Chose: </p>
+        <p id="winner">Result: </p>
+      </div> 
+      <br>
+      <div id="score">
+        <h3>SCORE:</h3>
+        <p id="uwin">YOU: </p>
+        <p id="compwin">THE COMPUTER: </p>
+        <p id="ties">TIES: </p>
+      </div>
+    </div>
+    <button id="reset"> RESET SCORE </button>
+   
 <script src="script.js"></script>
 </body>
-<html>
+</html>

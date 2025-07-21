@@ -8,11 +8,14 @@ A simple Rock Paper Scissors game built using **HTML**, **CSS**, and **JavaScrip
 - Result shown instantly on screen
 - Clean UI with hover effects
 - Optimized for different screen sizes (responsive design)
+- Real-time score tracking
+- Reset button to start fresh anytime
 
 ### 🛠 Files
 - `index.html`
 - `style.css`
 - `script.js`
+- `README.md`
 ---
 
 Made by **Mugdha Challa**
